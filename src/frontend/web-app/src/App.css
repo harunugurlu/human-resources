@@ -1,14 +1,18 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
-html, body {
-       /*#0081dd*/
-         /*#3498db*/ /*#1d1d46*/
+
+html,
+body {
+    /*#0081dd*/
+    /*#3498db*/
+    /*#1d1d46*/
     background-color: #1d1d46;
     scroll-behavior: smooth;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
 }
+
 
 /* h2 {
   font-family: 'Poppins',sans-serif;
@@ -16,42 +20,44 @@ html, body {
   color: rgb(255, 255, 255);
   font-weight: 550;
 } */
+
 label {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  color: #1d1d46;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #1d1d46;
 }
 
 h1 {
-  text-align: center;
-  padding-top: 16px;
+    text-align: center;
+    padding-top: 16px;
 }
 
 #new-experience-button {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: #ddd;
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  transition: 0.3s;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
 }
+
 #new-experience-button:hover {
-  background-color: rgb(52, 152, 219);
-  color: white;
+    background-color: rgb(52, 152, 219);
+    color: white;
 }
 
 #exp-button-div {
-  margin: 10px;
-  padding-bottom: 20px;
-  align-content: center;
-  position: relative;
+    margin: 10px;
+    padding-bottom: 20px;
+    align-content: center;
+    position: relative;
 }
 
 header.header {
@@ -61,16 +67,17 @@ header.header {
     left: 0;
     right: 0;
     z-index: 100;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
 }
+
 header.header .header-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .header-navigation {
-  flex-grow: 1;
+    flex-grow: 1;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -82,137 +89,165 @@ header.header .header-container {
     font-size: 1.2rem;
     height: 30px;
 }
+
 header.header .header-navigation a {
-  margin-left: 4px;
-  padding: 8px;
-  text-decoration: none;
-  color: rgba(255,255,255);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  font-weight: 550;
-  transition: all .1s ease-out;
-  padding-top: 0;
+    margin-left: 4px;
+    padding: 8px;
+    text-decoration: none;
+    color: rgba(255, 255, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: 550;
+    transition: all .1s ease-out;
+    padding-top: 0;
 }
 
 .forms-container {
-  display: flex;
-  padding: 0.4cm;
-}
-.forms-container > div {
-  flex: 1;
+    display: flex;
+    padding: 0.4cm;
 }
 
+.forms-container>div {
+    flex: 1;
+    flex-wrap: wrap;
+}
 
 .div-background-img {
-  height:100vh;
-  display: flex;
-  flex-direction: column-reverse;
-  overflow: hidden;
-  margin: 0;
-  background-color: rgb(0, 0, 0);
-  box-shadow: 0px 12px 15px rgb(0, 0, 0);
-  /*WORK ON FADING BORDERS*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 12px 15px rgb(0, 0, 0);
+    /*WORK ON FADING BORDERS*/
 }
 
 .FormDivs {
-  text-align: center;
+    text-align: center;
+    margin: 0.2cm;
+    padding: 4px;
+    background-color: rgb(52, 152, 219, .5);
+    border: 4px, solid, black;
+    box-shadow: 9px 9px 20px black;
+}
 
-  margin: 0.2cm;
-  padding: 4px;
-  background-color: rgb(52, 152, 219,.5);
-  border: 4px, solid, black;
-  box-shadow: 9px 9px 20px black;
-}
+
 /*WORK ON THE TEXTAREA*/
-input[type=text],[type=date],[type=number] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+
+input[type=text],
+[type=date],
+[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
+
+
 /*WORK ON THE ADD NEW EXPERIENCE BUTTON*/
+
 #click-here {
-  margin-left: .5cm;
-  background-color: rgb(52, 152, 219);
-  border: none;
-  font-size: 20px;
-  color: #FFFFFF;
-  padding: 3px;
-  width: 200px;
-  text-align: center;
-  -webkit-transition-duration: 0.2s; 
-  transition-duration: 0.2s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
+    margin-left: .5cm;
+    background-color: rgb(52, 152, 219);
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 3px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
 }
+
 #click-here:hover {
-  background-color: rgb(2, 122, 202);
+    background-color: rgb(2, 122, 202);
 }
 
 input[type=submit] {
-  width: 100%;
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
 .div-form {
-  margin: 0.3cm;
-  padding: 20px;
-  border: 5px;
-  background-color: #f2f2f2;
-  box-shadow: 9px 9px 20px black;
+    margin: 0.3cm;
+    padding: 20px;
+    border: 5px;
+    background-color: #f2f2f2;
+    box-shadow: 9px 9px 20px black;
+    flex-basis: 33.333333%
 }
 
 .div-form-exp {
-  margin: 0.3cm;
-  padding: 20px;
-  border: 5px;
-  background-color: #f2f2f2;
-  box-shadow: 9px 9px 20px black;
+    margin: 0.3cm;
+    padding: 20px;
+    border: 5px;
+    background-color: #f2f2f2;
+    box-shadow: 9px 9px 20px black;
+    flex-basis: 33.333333%
 }
 
 #user-table {
-  font-family: 'Poppins', sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+    font-family: 'Poppins', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-#user-table td, #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
+#user-table td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
 
-#user-table tr:nth-child(even){background-color: #f2f2f2;}
-
-
+#user-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
 #user-table td {
-  color: black;
+    color: black;
 }
 
 #user-table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: rgb(52, 152, 269);
-  color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(52, 152, 269);
+    color: white;
 }
 
+.button-inside-form {
+    margin-left: .5cm;
+    background-color: rgb(52, 152, 219);
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 3px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
 
-
-
-
+.button-inside-form:hover {
+    background-color: rgb(2, 122, 202);
+}
